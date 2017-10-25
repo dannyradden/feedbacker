@@ -4,11 +4,11 @@ class Header extends Component {
   render() {
     return (
       <nav>
-        <div class="nav-wrapper light-blue">
-          <a href="/" class="brand-logo">
+        <div className="nav-wrapper light-blue">
+          <a href="/" className="brand-logo">
             Feedbacker
           </a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li>
               <a href="/auth/google">Login With Google</a>
             </li>
