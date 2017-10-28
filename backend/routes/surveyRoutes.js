@@ -6,7 +6,7 @@ const Mailer = require('../services/Mailer');
 const surveyTemplate = require('../services/emailTemplates/surveyTemplate');
 
 module.exports = app => {
-  app.post('api/surveys', requireLogin, requireCredits, (req, res) => {
+  app.post('/api/surveys', requireLogin, requireCredits, (req, res) => {
     const { title, subject, body, recipients } = req.body;
     const survey = new Survey({
       title,
