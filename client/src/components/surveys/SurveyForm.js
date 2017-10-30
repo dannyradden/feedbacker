@@ -44,8 +44,8 @@ const validate = values => {
   if (!values.body) {
     errors.body = 'You must provide a body';
   }
-  if (!values.emails) {
-    errors.emails = 'You must provide at least one recipient';
+  if (!values.recipient) {
+    errors.recipient = 'You must provide at least one recipient';
   }
   return errors;
 };
